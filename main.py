@@ -1,29 +1,99 @@
 
 # Jerome Reaux Jr.
-# 2/1/2024
-# Reading and Writing Files in Python
+# 2/11/2024
+# Operators and Decision-Making in Python: If, Then, Else Statements
 
 #Getting user's name
-name = input("Hello, thank you for joining me today\nWhat is your name?\n")
+name = input("Are you feeling hungry?\nWhat is your name?\n")
 
 #print user's names
-print(name + "? Odd name but nonetheless, I'm happy you're here.\n")
+print(name + " well good to know today you to choose your own breakfast\n")
 
-print("Here's the rundown:\nThe bad boss(Mom) had locked up the treasure(Gummies)\n")
-print("Our job is break into the vault, get the treasures.\n ")
-print("")
+print("Here's the rundown:\nI'm going to give you options and you're going to choose what to eat.\n")
+#choice doesn't matter just a break point for code to be read
+ready = input("Are you ready to make your own breakfast? (y/n).\n") 
+print("\n\nGreat!!!\n")
+print("Moving on, what would like you to drink apple juice or orange juice? (Apple/Orange)")
 
-#The code opens the text file
-with open('PythonTextPrint.txt') as file:
-    print(file.read())
+#First choice in the breakfast making
+drink = input("")
+    #If else statement to the user's drink
+    
+    #If user picks apple juice
+if drink == "Apple" or drink == "apple":
+        print("\nGreat pick, I love apple juice too")
+        print("I hope you're happy with your pick as much as I am.\n")
+       
+       
+    #If user gets picks Orange Juice
+elif drink == "Orange" or drink == "orange" :
+        print("\nGreat pick, I love orange juice too")
+        print("I hope you're happy with your pick as much as I am.\n")
+        
+#if user doesn't pick  a drink        
+else:
+        print("I guess we're rock no drink today?\n")
+        print("I'll just give you milk")
+        
+print("\n\nNow that we picked out your drink time ")
+print("It's time for your choice of protein\n")
 
-print(file.close)
+#Second choice in the breakfast making
+meat = input("Do you prefer ham or bacon? (Ham/Bacon)")
 
-code = input(:)
-#If else statement to get inside the value
-if code == "2901"
-print("We're in, grab what you can get out")
-elif code != 2901
-print("You got it wrong!\n Reread the note and try again")
-return 16
 
+    #If else statement to the user's protein choice
+    
+
+    #If user gets picks ham for choice of meat
+if meat == "Ham" or meat == "ham":
+        print("\nGreat pick, There's that can compare to a warm juicy in ham in the morning")
+        print("I'll go ahead start putting it in the oven\n")
+       
+      
+       
+    #If user gets picks bacon for choice of meat
+elif meat == "Bacon" or meat == "bacon":
+        print("\nSpectacular pick, Crispy bacon is the way to go in the morning\n")
+        print("I myself prefer turkey bacon but for I will make honey smoked\n")
+        
+#if user doesn't pick a choice of meat        
+else:
+        print("Not a fan of ham or bacon huh?\n")
+        print("Looks like I'll be surving you tofu today")
+        
+        
+  #Last choice in the breakfast making      
+print("\nNow onto to your final decision, egg!!!!\n")
+print("How many eggs should I put in your scrambled eggs?")
+egg = input("\n One egg, two eggs or three? (1, 2 or 3)")
+
+#Last choice in the breakfast making
+
+    #If else statement to the user's for # of eggs
+    
+
+    #If user want 1 egg
+if egg == 1:
+        print("\nThere's nothing wrong with just one,")
+        print("I'll prepare this at once\n")
+       
+      
+       
+    #If user wants 2 eggs
+elif egg == 2:
+        print("\nEggcellent choice of 2 eggs\n")
+        print("I'll start the scrambling at once\n")
+     
+     #If user want 3 eggs   
+elif egg == 3:
+        print("3 eggs must feeling hungry, never the less it shall be made")
+        
+#Code reads back what user put        
+print("\n\nNow that everything is prepared enjoy yourbreakfast of " + drink +" juice")
+print("Also with your choice of " + meat)
+print("and your " + egg + " scramble")
+        
+        
+       
+       
